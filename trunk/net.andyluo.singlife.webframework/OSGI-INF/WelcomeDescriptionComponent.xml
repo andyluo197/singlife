@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="net.andyluo.singlife.webframework.welcome">
+	<implementation class="net.andyluo.singlife.webframework.back.WelcomeDescriptionM"/>
+		<reference name="WelcomeDescriptionService"
+		interface="net.andyluo.singlife.webframework.services.WelcomeDescriptionService"
+		bind="setWelcomeDescriptionService"
+		unbind="unsetWelcomeDescriptionService"
+		cardinality="0..n"
+		policy="dynamic"/>
+</component>
