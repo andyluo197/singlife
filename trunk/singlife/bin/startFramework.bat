@@ -1,0 +1,1 @@
+java -classpath ../lib/org.eclipse.osgi_3.3.0.v20070530.jar org.eclipse.core.runtime.adaptor.EclipseStarter -console -configuration ../configuration
