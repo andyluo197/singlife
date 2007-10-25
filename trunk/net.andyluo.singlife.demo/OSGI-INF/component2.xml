@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="net.andyluo.singlife.demo2">
+	<implementation class="net.andyluo.singlife.demo.NavigationServiceImpl2"/>
+	<service>
+		<provide interface="net.andyluo.singlife.webframework.services.NavigationService"/>
+	</service>
+</component>

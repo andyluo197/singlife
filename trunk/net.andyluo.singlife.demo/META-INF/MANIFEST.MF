@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Demo Plug-in
+Bundle-SymbolicName: net.andyluo.singlife.demo
+Bundle-Version: 1.0.0
+Bundle-Vendor: AndyLuo.net
+Import-Package: javax.servlet;version="2.4.0",
+ net.andyluo.singlife.webframework.beans,
+ net.andyluo.singlife.webframework.services,
+ org.eclipse.equinox.http.helper,
+ org.eclipse.equinox.jsp.jasper;version="1.0.0",
+ org.osgi.framework;version="1.4.0",
+ org.osgi.service.http;version="1.2.0",
+ org.osgi.util.tracker;version="1.3.3"
+Bundle-Activator: net.andyluo.singlife.demo.Activator
+Service-Component: OSGI-INF/component.xml,OSGI-INF/component2.xml,OSGI-INF/component3.xml
