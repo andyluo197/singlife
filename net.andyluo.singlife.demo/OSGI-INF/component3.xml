@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="net.andyluo.singlife.demo.welcome">
+	<implementation class="net.andyluo.singlife.demo.WelcomeDescriptionServiceImpl"/>
+	<service>
+		<provide interface="net.andyluo.singlife.webframework.services.WelcomeDescriptionService"/>
+	</service>
+</component>
