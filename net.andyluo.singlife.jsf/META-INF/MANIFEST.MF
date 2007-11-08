@@ -37,6 +37,4 @@ Export-Package: javax.faces,
  com.sun.faces.renderkit,
  com.sun.faces.renderkit.html_basic,
  com.sun.faces.el,
- com.sun.faces.el.impl,
- com.sun.faces.el.impl.parser,
  com.sun.faces.util
