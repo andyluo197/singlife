@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2007-10-26 上午10:14:36                                                        
+
+     net.andyluo.singlife.webframework    
+     SingLife core framework
+                   
+     Luo Ming                                                                
+     ====================================================================== -->
+<project name="net.andyluo.singlife.webframework" default="force">
+    <description>
+            SingLife core framework
+    </description>
+	<property file="AntBundle.properties"/>
+
+    <!-- ================================= 
+          target: force              
+         ================================= -->
+    <target name="force" depends="init" description="--> SingLife core framework">
+    	<javac srcdir="src"
+         destdir="bin"
+         classpath="${java.class.path}"
+         debug="on"/>
+        <jar destfile="../singlife/apps/plugins/${bundle.name}_${bundle.version}.jar">
+        	<fileset dir="bin">
+			    <include name="**/*"/>
+			</fileset>
+			<fileset dir="./">
+			    <include name="OSGI-INF/*.xml"/>
+				<include name="web/*.*"/>				
+			</fileset>
+
+        	<metainf file="META-INF/MANIFEST.MF"/>
+        </jar>
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: init                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="init">
+    	<path id="java.class.path">
+    		<fileset dir="../singlife/lib" id="singlife.lib.files">
+    			<includesfile name="*.jar"/>
+			</fileset>
+			<fileset dir="../singlife/apps/plugins" id="singlife.apps.files">
+				<includesfile name="*.jar"/>
+			</fileset>
+
+    	</path>
+    </target>
+
+</project>
