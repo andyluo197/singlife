@@ -1,0 +1,1 @@
+SingLife is a web framework for simplifying web development. We provide a whole architecture based on OSGi. With the benefit of OSGi Service Architecture, we can easily add modules to extend the functionality of the web application.
